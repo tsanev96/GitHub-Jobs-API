@@ -1,0 +1,10 @@
+@import "./functions/pixel-to-rem";
+@import "./settings";
+@import "./reset";
+@import "./mixins";
+@import "./fonts";
+
+html {
+    font-family: "DMSans", sans-serif;
+    font-weight: normal;
+  }
