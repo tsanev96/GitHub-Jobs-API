@@ -1,0 +1,42 @@
+@import "../../../styles/mixins";
+@import "../../../styles/functions";
+
+.toggle-button {
+  position: relative;
+  display: block;
+  width: rem(50);
+  height: rem(25);
+  cursor: pointer;
+
+  input {
+    opacity: 0;
+  }
+
+  input:checked + &__slider::before {
+    transform: translate(20px, -50%);
+  }
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--white-color);
+    border-radius: rem(30);
+    transition: 0.5s;
+  }
+
+  &__slider::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(20);
+    height: rem(20);
+    background: var(--violet-color);
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+}

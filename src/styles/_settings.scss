@@ -3,10 +3,15 @@ html {
 }
 
 :root {
-  --primary-color: #000;
+  --violet-color: #5964e0;
+  --light-violet-color: #939bf4;
+  --gray-color: #9daec2;
+  --dark-gray-color: #6e8098;
   --white-color: #fff;
-  --light-gray-color: #dfdfdf;
-  --lighter-gray-color: #f5f3f3;
+  --dark-theme-primary: #19202d;
+  --dark-theme-secondary: #121721;
+  --light-theme-primary: #000;
+  --light-theme-secondary: #f4f6f8;
 }
 
 $breakpoints: (

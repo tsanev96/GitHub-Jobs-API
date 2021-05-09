@@ -1,0 +1,26 @@
+@import "../../styles/mixins";
+@import "../../styles/functions";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: rem(30) rem(24); //TODO
+  background: url("../../assets/mobile/bg-pattern-header.svg") no-repeat center
+    center;
+
+  &__logo {
+    color: var(--white-color);
+  }
+
+  &__switch-themes {
+    @include verticalFlexCenter;
+
+    .toggle-button {
+      margin: 0 rem(15);
+    }
+
+    svg {
+      color: var(--white-color);
+    }
+  }
+}
